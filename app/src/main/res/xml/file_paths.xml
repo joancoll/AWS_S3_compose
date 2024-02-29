@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--directori on es guardarà imatge. si al path hi posem / ho guarda al directori files-->
+    <!-- https://developer.android.com/reference/androidx/core/content/FileProvider
+Provider path for a specific path as followings:
+<files-path/> -> Context.getFilesDir() Directori propi app
+<external-path/> -> Environment.getExternalStorageDirectory()
+<external-files-path/> -> Context.getExternalFilesDir(String)
+<cache-path/> -> Context.getCacheDir()
+<external-cache-path/> -> Context.getExternalCacheDir()
+<external-media-path/> -> Context.getExternalMediaDirs() -->
+    <files-path
+        name="files"
+        path="." />
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+</paths>
